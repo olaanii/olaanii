@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="570" viewBox="0 0 1000 570" role="img" aria-labelledby="title desc">
+  <title id="title">Olani's GitHub activity</title>
+  <desc id="desc">A black and white activity chart that fills with public GitHub contribution data when the profile update workflow runs.</desc>
+  <rect width="1000" height="570" rx="14" fill="#000"/>
+  <g fill="#fff" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">
+    <text x="28" y="38" font-size="13" letter-spacing="1.5">ACTIVITY</text>
+    <text x="28" y="74" font-size="18">Loading public GitHub activity…</text>
+    <text x="28" y="106" fill="#aaa" font-size="13">This graphic will populate automatically after the profile workflow runs.</text>
+  </g>
+  <g stroke="#555" stroke-dasharray="4 5">
+    <path d="M64 160H958M64 210H958M64 260H958"/>
+  </g>
+  <path d="M0 290H1000M333 290V424M666 290V424M0 424H1000" stroke="#555"/>
+  <g fill="#aaa" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11" letter-spacing="1.4">
+    <text x="28" y="320">CONTRIBUTIONS</text><text x="360" y="320">ACTIVE DAYS</text><text x="694" y="320">BUSIEST DAY</text>
+    <text x="28" y="394">CURRENT STREAK</text><text x="360" y="394">LONGEST STREAK</text><text x="694" y="394">BEST WEEK</text>
+    <text x="28" y="452">BY WEEKDAY</text><text x="354" y="452">LANGUAGES</text>
+  </g>
+</svg>

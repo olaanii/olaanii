@@ -41,7 +41,9 @@ I build useful cross-platform products, from the first interface to the systems 
 
 ## Activity
 
-Explore my [interactive GitHub contribution graph](https://olani.dev/#activity) on my portfolio. The graph uses my public GitHub activity and supports drag-to-orbit in its 3D view.
+![Black and white GitHub activity log](./assets/github-activity.svg)
+
+The activity graphic is generated from my public GitHub contributions and refreshes weekly. [Explore the interactive 3D graph](https://olani.dev/#activity) on my portfolio.
 
 ---
 
