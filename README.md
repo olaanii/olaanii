@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/olani-profile-banner.svg" alt="Olani Shambel · Software developer" width="100%">
+<img src="./assets/olani-profile-banner-20261027.svg" alt="Olani Shambel · Software developer" width="100%">
 
 **Software developer · Flutter · Web · AI**
 
