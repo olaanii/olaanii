@@ -87,19 +87,38 @@ public static class BlueprintPreview {
   }
 
   static Bitmap Frame(float w, float h, float r, string label, int frameIndex) {
-    const int W = 640, H = 460;
+    const int W = 1200, H = 340;
     var bmp = new Bitmap(W, H, PixelFormat.Format32bppArgb);
     using (var g = Graphics.FromImage(bmp)) {
       g.SmoothingMode = SmoothingMode.AntiAlias;
       g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
       g.Clear(Color.Black);
-      using (var faint = new Pen(Color.FromArgb(20, 255, 255, 255), 1)) {
-        for (int k = -2; k < 8; k++) g.DrawLine(faint, k * 112, 20, k * 112 + 310, 430);
+      using (var faint = new Pen(Color.FromArgb(22, 255, 255, 255), 1)) {
+        for (int k = -4; k < 16; k++) g.DrawLine(faint, k * 90, 8, k * 90 + 230, 308);
+        for (int k = -2; k < 24; k++) g.DrawLine(faint, 0, k * 24, 1200, k * 24 - 132);
       }
-      var scale = 1.12f;
+      using (var card = Rounded(4, 4, 1192, 332, 16))
+      using (var border = new Pen(Color.FromArgb(100, 255, 255, 255), 1.5f)) g.DrawPath(border, card);
+
+      using (var logo = Rounded(64, 49, 38, 42, 11))
+      using (var logoPen = new Pen(Color.White, 5)) g.DrawPath(logoPen, logo);
+      Line(g, Color.White, 4, 80, 74, 80, 87);
+      using (var metaFont = new Font("Consolas", 14, FontStyle.Bold))
+      using (var metaBrush = new SolidBrush(Color.FromArgb(205, 205, 205)))
+        g.DrawString("SOFTWARE DEVELOPER  |  ADAMA, ETHIOPIA", metaFont, metaBrush, 126, 68);
+      using (var nameFont = new Font("Georgia", 58, FontStyle.Bold))
+      using (var white = new SolidBrush(Color.White)) g.DrawString("Olani Shambel", nameFont, white, 70, 101);
+      using (var roleFont = new Font("Consolas", 19, FontStyle.Bold))
+      using (var light = new SolidBrush(Color.FromArgb(230, 230, 230))) g.DrawString("Flutter  |  Web  |  AI", roleFont, light, 70, 190);
+      using (var subFont = new Font("Consolas", 13))
+      using (var muted = new SolidBrush(Color.FromArgb(166, 166, 166)))
+        g.DrawString("BUILDING PRODUCTS FROM INTERFACE TO INFRASTRUCTURE", subFont, muted, 70, 228);
+
+      var scale = .78f;
       w *= scale; h *= scale; r *= scale;
-      var x = (W - w) / 2;
-      var y = 57 + (255 - h) / 2;
+      const float deviceCenterX = 900;
+      var x = deviceCenterX - w / 2;
+      var y = 30 + (208 - h) / 2;
       using (var outer = Rounded(x, y, w, h, r)) {
         using (var black = new SolidBrush(Color.FromArgb(7, 7, 7))) g.FillPath(black, outer);
         using (var clip = (GraphicsPath)outer.Clone()) {
@@ -112,22 +131,24 @@ public static class BlueprintPreview {
       }
       var bezel = Math.Max(12, Math.Min(22, w * .075f));
       if (w > 285) {
-        using (var stand = new SolidBrush(Color.FromArgb(120, 120, 120))) {
-          var points = new[] { new PointF(W / 2 - 22, y + h), new PointF(W / 2 + 22, y + h), new PointF(W / 2 + 34, y + h + 22), new PointF(W / 2 - 34, y + h + 22) };
+        using (var stand = new SolidBrush(Color.FromArgb(135, 135, 135))) {
+          var points = new[] { new PointF(deviceCenterX - 18, y + h), new PointF(deviceCenterX + 18, y + h), new PointF(deviceCenterX + 28, y + h + 16), new PointF(deviceCenterX - 28, y + h + 16) };
           g.FillPolygon(stand, points);
-          g.FillRectangle(stand, W / 2 - 54, y + h + 22, 108, 5);
+          g.FillRectangle(stand, deviceCenterX - 45, y + h + 16, 90, 4);
         }
       }
       DrawScreen(g, x + bezel, y + bezel, w - bezel * 2, h - bezel * 2);
-      using (var mono = new Font("Consolas", 13, FontStyle.Bold))
+      using (var mono = new Font("Consolas", 11, FontStyle.Bold))
       using (var brush = new SolidBrush(Color.White)) {
         var labelText = "FIG. 1  |  ONE CODEBASE  |  " + label.ToUpperInvariant();
         var size = g.MeasureString(labelText, mono);
-        g.DrawString(labelText, mono, brush, (W - size.Width) / 2, 388);
+        g.DrawString(labelText, mono, brush, deviceCenterX - size.Width / 2, 270);
       }
-      using (var pen = new Pen(Color.FromArgb(90, 255, 255, 255), 1)) g.DrawLine(pen, 0, 417, W, 417);
-      using (var font = new Font("Consolas", 9))
-      using (var brush = new SolidBrush(Color.FromArgb(135, 135, 135))) g.DrawString("FLUTTER | RESPONSIVE TELEGRAM BLUEPRINT", font, brush, 20, 430);
+      using (var strip = new SolidBrush(Color.FromArgb(5, 5, 5))) g.FillRectangle(strip, 0, 310, W, 30);
+      using (var hatch = new Pen(Color.FromArgb(72, 255, 255, 255), 1))
+        for (int hx = -30; hx < W; hx += 9) g.DrawLine(hatch, hx, 339, hx + 30, 310);
+      Line(g, Color.FromArgb(115, 255, 255, 255), 1, 0, 310, W, 310);
+      Line(g, Color.FromArgb(115, 255, 255, 255), 1, 0, 339, W, 339);
     }
     return bmp;
   }
@@ -172,4 +193,4 @@ public static class BlueprintPreview {
 '@
 
 Add-Type -TypeDefinition $source -ReferencedAssemblies System.Drawing.dll, System.Core.dll
-[BlueprintPreview]::Render((Join-Path $PSScriptRoot '..\assets\telegram-blueprint-preview.gif'))
+  [BlueprintPreview]::Render((Join-Path $PSScriptRoot '..\assets\olani-profile-hero.gif'))

@@ -1,18 +1,10 @@
 <div align="center">
 
-<img src="./assets/olani-profile-banner-20261027.svg" alt="Olani Shambel · Software developer" width="100%">
+<img src="./assets/olani-profile-hero.gif" alt="Olani Shambel with a monochrome Telegram blueprint animating through phone, tablet, and desktop layouts" width="100%">
 
 </div>
 
-<img align="right" width="36%" src="./assets/telegram-blueprint-preview.gif" alt="Animated monochrome Telegram blueprint resizing across phone, tablet, and desktop layouts">
-
-**Software developer · Flutter · Web · AI**
-
-I build useful cross-platform products, from the first interface to the systems behind it.
-
-[Portfolio](https://olani.dev) · [GitHub](https://github.com/olaanii) · [X](https://x.com/OlaaniiS) · [Telegram](https://t.me/c_O_d_e_r)
-
-<br clear="right">
+<p align="center">[Portfolio](https://olani.dev) · [GitHub](https://github.com/olaanii) · [X](https://x.com/OlaaniiS) · [Telegram](https://t.me/c_O_d_e_r)</p>
 
 ---
 
