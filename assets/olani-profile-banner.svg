@@ -1,26 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" fill="none">
   <defs>
     <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-      <path d="M0 0V8" stroke="#77716b" stroke-opacity=".42" stroke-width="1"/>
+      <path d="M0 0V8" stroke="#fff" stroke-opacity=".38" stroke-width="1"/>
     </pattern>
     <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="skewY(24)">
-      <path d="M34 0H0V34" stroke="#b9aa98" stroke-opacity=".08"/>
+      <path d="M34 0H0V34" stroke="#fff" stroke-opacity=".08"/>
     </pattern>
   </defs>
-  <rect width="1200" height="340" rx="16" fill="#171614"/>
-  <rect x="1" y="1" width="1198" height="338" rx="15" stroke="#6e675f" stroke-opacity=".65"/>
-  <path d="M670 0 1200 300M870 0 1200 186M1000 0 1200 112M0 50 470 340" stroke="#b9aa98" stroke-opacity=".1"/>
+  <rect width="1200" height="340" rx="16" fill="#000"/>
+  <rect x="1" y="1" width="1198" height="338" rx="15" stroke="#fff" stroke-opacity=".45"/>
+  <path d="M670 0 1200 300M870 0 1200 186M1000 0 1200 112M0 50 470 340" stroke="#fff" stroke-opacity=".12"/>
   <rect x="24" y="24" width="1152" height="274" fill="url(#grid)"/>
-  <g transform="translate(70 70)" stroke="#f2eee8" stroke-linecap="round" stroke-linejoin="round">
+  <g transform="translate(70 70)" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
     <rect x="2" y="2" width="35" height="39" rx="11" stroke-width="5"/>
     <path d="M14 25v12" stroke-width="5"/>
   </g>
-  <text x="126" y="94" fill="#aaa198" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" letter-spacing="3">SOFTWARE DEVELOPER · ADAMA, ETHIOPIA</text>
-  <text x="70" y="186" fill="#f2eee8" font-family="Georgia, 'Times New Roman', serif" font-size="70" font-weight="700" letter-spacing="-2">Olani Shambel</text>
-  <path d="m681 149 10 6 12-2 6 11 11 5-2 12 5 10-5 10 2 12-11 5-6 11-12-2-10 6-10-6-12 2-6-11-11-5 2-12-5-10 5-10-2-12 11-5 6-11 12 2 10-6Z" fill="#d18b6a"/>
-  <path d="m674 187 9 9 17-18" stroke="#171614" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="70" y="239" fill="#c6b8a8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19">Flutter · Web · AI</text>
-  <text x="70" y="271" fill="#948a80" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="1.2">BUILDING PRODUCTS FROM INTERFACE TO INFRASTRUCTURE</text>
+  <text x="126" y="94" fill="#bfbfbf" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" letter-spacing="3">SOFTWARE DEVELOPER · ADAMA, ETHIOPIA</text>
+  <text x="70" y="186" fill="#fff" font-family="Georgia, 'Times New Roman', serif" font-size="70" font-weight="700" letter-spacing="-2">Olani Shambel</text>
+  <path d="m681 149 10 6 12-2 6 11 11 5-2 12 5 10-5 10 2 12-11 5-6 11-12-2-10 6-10-6-12 2-6-11-11-5 2-12-5-10 5-10-2-12 11-5 6-11 12 2 10-6Z" fill="#fff"/>
+  <path d="m674 187 9 9 17-18" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="70" y="239" fill="#e5e5e5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19">Flutter · Web · AI</text>
+  <text x="70" y="271" fill="#a6a6a6" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="1.2">BUILDING PRODUCTS FROM INTERFACE TO INFRASTRUCTURE</text>
   <rect x="0" y="310" width="1200" height="30" fill="url(#hatch)"/>
-  <path d="M0 310H1200M0 339H1200" stroke="#6e675f" stroke-opacity=".7"/>
+  <path d="M0 310H1200M0 339H1200" stroke="#fff" stroke-opacity=".45"/>
 </svg>
